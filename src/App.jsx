@@ -43,6 +43,9 @@ export default function App() {
   }
 
   function toggleHold(dieID) {
+    if (win) {
+      return;
+    }
     const newDice = dice.map((die) => {
       if (die.id === dieID) {
         return { ...die, isHeld: !die.isHeld };
