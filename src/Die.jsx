@@ -14,7 +14,7 @@ export default function Die(props) {
 
 Die.propTypes = {
   die: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     value: PropTypes.number.isRequired,
     isHeld: PropTypes.bool.isRequired,
   }),
